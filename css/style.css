@@ -1,0 +1,206 @@
+* {
+    font-family: Lucida Sans, Arial, Helvetica, sans-serif;
+    font-size: 34px;
+}
+body{
+    padding-top: 140px;
+}
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@-webkit-keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+.container{
+	max-width: 100%;
+	min-width: 100%;
+	width:100% !important;
+}
+.blur {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+}
+.modal-backdrop{
+    opacity: 0.5;
+}
+.modal-xl{
+	max-width: 90% !important;
+}
+ul.list-group li .badge{
+	float: right;
+	font-size: 30px;
+}
+
+.bg-secondary{color: #fff !important;}
+.btn-warning, .btn-warning:hover, .btn-warning:active, .btn-warning:focus, .btn-warning:visited{
+    color: #fff !important;
+    background-color: #ffb707;
+}
+.badge-keyarea{
+    position: relative;
+    overflow: hidden;
+}
+.badge-keycode {
+    display: none;
+    /*position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    font-weight: bold;*/
+}
+.badge-keycode.badge-right{
+    left: unset;
+    right: 0;
+}
+#loteria .col-lg-3, #loteria .col-lg-9{
+	float:left;
+}
+.card-header{
+	font-weight: bold;
+}
+.pull-right{
+	float: right !important;	
+}
+#lotTitle{
+	text-transform: capitalize;
+}
+.img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.max-height-100{
+    max-height: 100px;
+    margin-bottom: 10px;
+}
+.navbar .collapse .nav-item{
+	padding: 0px 5px 0px 5px;
+}
+.card{
+	margin-bottom: 15px;
+}
+.page, .subpage{
+    display: none;
+    -webkit-animation-duration: 0.5s;animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;animation-fill-mode: both;
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+}
+.page.active, .subpage.active{
+    display: block !important;
+    -webkit-animation-duration: 0.5s;animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+.list-group .badge{
+    font-size: 22px;
+}
+.col-menu{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.btn-secondary:focus,.btn-secondary:hover,.btn-secondary:active,.secondary-focus{
+    color: #fff;
+    background-color: #727b84;
+    border-color: #6c757d;
+    box-shadow: 0 0 0 0.4rem rgba(134,142,150,.5);
+}
+.btn-outline-info:focus,.btn-outline-info:hover,.btn-outline-info:active,.btn-info:focus,.btn-info:hover,.btn-info:active,.info-focus{
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    box-shadow: 0 0 0 0.4rem rgba(23,162,184,.5);
+}
+.btn-success:focus,.btn-success:hover,.btn-success:active,.success-focus{
+    color: #fff;
+    background-color: #218838;
+    border-color: #1e7e34;
+    box-shadow: 0 0 0 0.4rem rgba(40,167,69,.5);
+}
+.btn-primary:focus,.btn-primary:hover,.btn-primary:active,.primary-focus {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    box-shadow: 0 0 0 0.4rem rgba(0,123,255,.5);
+}
+.btn-warning:focus,.btn-warning:hover,.btn-warning:active,.warning-focus{
+    color: #fff !important;
+    background-color: #ffb707;
+    border-color: #d39e00;
+    box-shadow: 0 0 0 0.4rem rgba(255,193,7,.5);
+}
+.btn-danger:focus,.btn-danger:hover,.btn-danger:active,.danger-focus{
+    color: #fff;
+    background-color: #c82333;
+    border-color: #bd2130;
+    box-shadow: 0 0 0 0.4rem rgba(220,53,69,.5);
+}
+
+.btn-outline-loteria{margin-bottom: 25px;}
+
+.theme-megasena .bg-loteria, .theme-megasena .btn-loteria,.theme-megasena .btn-loteria:hover{background-color:#249552 !important;border-color:#208648 !important; color: white !important;}
+.theme-megasena .btn-loteria:active,.theme-megasena .btn-loteria:focus,.theme-megasena .btn-loteria.focus{background-color:#208648 !important;border-color:#1D7641 !important}
+.theme-megasena .btn.focus, .theme-megasena .btn:focus, .theme-megasena .form-control:focus, .theme-megasena .form-control.focus{outline: 0; box-shadow: 0 0 0 0.4rem rgba(36,149,82,.5);}
+.theme-megasena .btn-outline-loteria{color: #249552; background-color: transparent; background-image: none; border-color: #249552;}
+.theme-megasena .btn-outline-loteria:hover{color: #fff; background-color: #249552; border-color: #249552;}
+
+.theme-lotofacil .bg-loteria, .theme-lotofacil .btn-loteria,.theme-lotofacil .btn-loteria:hover{background-color:#7E0F8B !important;border-color:#670D71 !important; color: white !important;}
+.theme-lotofacil .btn-loteria:active,.theme-lotofacil .btn-loteria:focus,.theme-lotofacil .btn-loteria.focus{background-color:#5C0C65 !important;border-color:#4B0B53 !important}
+.theme-lotofacil .btn.focus, .theme-lotofacil .btn:focus, .theme-lotofacil .form-control:focus, .theme-lotofacil .form-control.focus{outline: 0; box-shadow: 0 0 0 0.4rem rgba(126,15,139,.5);}
+.theme-lotofacil .btn-outline-loteria{color: #7E0F8B; background-color: transparent; background-image: none; border-color: #7E0F8B;}
+.theme-lotofacil .btn-outline-loteria:hover{color: #fff; background-color: #7E0F8B; border-color: #7E0F8B;}
+
+.theme-lotomania .bg-loteria, .theme-lotomania .btn-loteria,.theme-lotomania .btn-loteria:hover{background-color:#FE7A05 !important;border-color:#E06B01 !important; color: white !important;}
+.theme-lotomania .btn-loteria:active,.theme-lotomania .btn-loteria:focus,.theme-lotomania .btn-loteria.focus{background-color:#E06B01 !important;border-color:#C96001 !important}
+.theme-lotomania .btn.focus, .theme-lotomania .btn:focus, .theme-lotomania .form-control:focus, .theme-lotomania .form-control.focus{outline: 0; box-shadow: 0 0 0 0.4rem rgba(254,122,5,.5);}
+.theme-lotomania .btn-outline-loteria{color: #FE7A05; background-color: transparent; background-image: none; border-color: #FE7A05;}
+.theme-lotomania .btn-outline-loteria:hover{color: #fff; background-color: #FE7A05; border-color: #FE7A05;}
+
+.theme-quina .bg-loteria, .theme-quina .btn-loteria,.theme-quina .btn-loteria:hover{background-color:#2B0D8A !important;border-color:#230B6C !important; color: white !important;}
+.theme-quina .btn-loteria:active,.theme-quina .btn-loteria:focus,.theme-quina .btn-loteria.focus{background-color:#240B6F !important;border-color:#1B0951 !important}
+.theme-quina .btn.focus, .theme-quina .btn:focus, .theme-quina .form-control:focus, .theme-quina .form-control.focus{outline: 0; box-shadow: 0 0 0 0.4rem rgba(43,13,138,.5);}
+.theme-quina .btn-outline-loteria{color: #2B0D8A; background-color: transparent; background-image: none; border-color: #2B0D8A;}
+.theme-quina .btn-outline-loteria:hover{color: #fff; background-color: #2B0D8A; border-color: #2B0D8A;}
+
+.table-jogo td{
+	font-size:50px !important;
+}
+.calendario {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+    font-size: 30px;
+    padding: 8px;
+    vertical-align: top;
+    border-top: 1px solid #eeeeee;
+}
+.bg-cinza-medio {
+    background-color: #EFEFEF;
+}
+.calendario thead {
+    background-color: #EFEFEF;
+}
+.calendario td {
+    border: 1px solid #E7E7E7;
+}
+.calendario .hoje {
+    /*border: 18px solid #CCCCCC !important;*/
+   	outline:18px solid #CCCCCC;
+}
